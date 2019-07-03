@@ -22,8 +22,10 @@ class App extends React.Component<{}, IState>{
     return (
       <div>
         <Header />
-        <DropArea setResults={this.resultstate} />
-        <Result result={this.state.result} filelength={this.state.filelength} />
+        <div className="row2">
+          <DropArea setResults={this.resultstate} />
+          <Result result={this.state.result} filelength={this.state.filelength} />
+        </div>
       </div>
     );
   }
